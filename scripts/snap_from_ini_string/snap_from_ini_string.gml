@@ -110,7 +110,7 @@ function snap_from_ini_string()
                         if (_value_start < 0)
                         {
                             _value_start = buffer_tell(_buffer) - 1;
-                            if (_value == ord("\"")) _in_string = true;
+                            if (_value == ord("\")) _in_string = true;
                         }
                         
                         if (_value > 32) _last_non_whitespace = buffer_tell(_buffer) - 1;
@@ -176,3 +176,4 @@ function snap_from_ini_string()
 
     return _root
 }
+                                              
